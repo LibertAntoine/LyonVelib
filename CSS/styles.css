@@ -290,3 +290,175 @@ text-shadow: 2px 0px 2px black;
   background-color: rgb(220,220,220);
   border-radius: 5px;
 }
+
+/* MEDIA QUERIES */
+@media (min-width: 1200px) {
+  #page {
+    width: 1150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #reservebox {
+      left: 520px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #reservebox {
+      left: 390px;
+  }
+  #page {
+    width: 970px;
+  }
+}
+
+@media (max-width: 990px) {
+  #reservebox {
+      left: 240px;
+  }
+  #page {
+    width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  #button-nav {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    background-color: white;
+    top: 82px;
+    right: -40%;
+  }
+
+  #button-nav:hover + nav, #button-nav:active + nav, nav:hover, nav:active {
+    right: 5%;
+  }
+
+  #detailStation {
+  height: 100%;
+  }
+
+  #navig {
+    flex-direction:column;
+  }
+  #map {
+    width: 100%;
+  }
+    
+  #page {
+    width: 90%;
+  }
+  #reservebox {
+    left: 10px;
+    top: 0px;
+    z-index: 5;
+    width: 90%;
+    height: 380px;
+    margin-right: 10px;
+    background-color: grey;
+    box-shadow: 1.8px -2.5px 2px black;
+    margin-bottom: 0px;
+  }
+
+  .fa-caret-up {
+    position: absolute;
+    color: grey;
+    top: -51px;
+    text-shadow: 1px -3px 2px black;  
+  }
+
+  #canvas {
+    top: 10px;
+    right: 10px;
+  }
+
+  #reserve {
+    margin-bottom: 10px;
+  }
+
+  #infos {
+    width: 90%;
+    min-height: 180px;
+  }
+
+  h2 {
+    max-width: 500px;
+  }
+
+  .slider {
+    padding: 5px;
+    height: 350px;
+  }
+ 
+  .slider h2 {
+    font-size: 10px;
+  }
+
+  .slider p {
+    font-size: 8px;
+  }
+
+  #infosReservation {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #navProjects {
+    display: none;
+  }
+}
+
+
+/* ANIMATIONS */
+@keyframes glisseMilieuDroite {
+  0% {  
+    transform: translateZ(150px); 
+    z-index:5;
+    left:34%;}
+  100%{
+    transform: translateZ(0px);
+    transform: rotateY(-0.3turn);;
+    left:61%;
+    z-index:1;
+  }
+}
+
+@keyframes glisseMilieuGauche {
+  0% { 
+    transform: translateZ(150px); 
+    z-index:5;
+    left:34%;}
+  100%{
+    transform: translateZ(0px);
+    transform: rotateY(0.3turn);;
+    left:7%;
+    z-index:1;
+  }
+}
+
+@keyframes glisseGaucheMilieu {
+  0% {
+    transform: rotateY(0.3turn) translateZ(0px);
+    left:7%;}
+  100%{
+    transform: rotateY(0deg) translateZ(150px); 
+    z-index:5;
+    left:34%;;
+  }
+}
+
+@keyframes glisseDroiteMilieu {
+  0% { 
+    transform: translateZ(0px) rotateY(-0.3turn);;
+    left:61%;
+    z-index:1;}
+  100%{
+    transform: translateZ(150px) rotateY(0deg); 
+    z-index:5;
+    left:34%;
+  }
+}
