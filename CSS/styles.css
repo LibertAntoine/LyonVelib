@@ -26,3 +26,147 @@ footer {
   color: white;
 }
 
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input[type="text"], input[type="mail"] {
+    display: block;
+    width: 88%;
+    height: 24px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  right: 10%;
+}
+
+#page {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* NAVBAR */
+nav div {
+  width: 100px;
+  line-height: 81px;
+}
+
+nav div:hover {
+  line-height: 79px;
+  font-weight:bold;
+  border-top: 2px solid green;
+}
+
+#logo {
+  width: 250px;
+  padding: 13px;
+}
+
+#button-nav {
+  height: 82px;
+  width: 90.5px;
+  text-align: center;
+  line-height: 82px;
+  display: none;
+  position: fixed;
+  right: 5%;
+}
+
+/* SLIDER */ 
+#slide-group {
+  background-image: url("../picture/lyon.jpg");
+  background-size: cover;
+  border : black solid 2px;
+  border-radius: 7px;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   width: 100%;
+ }
+
+.slider {
+  height: 600px;
+  padding: 40px; 
+  }
+
+.slide {
+  border-radius: 7px;
+  border : 1px solid black;
+  overflow: hidden;
+  width:33%;
+  position: absolute;
+}
+
+.slideMiddle {
+  transform: translateZ(150px); 
+  z-index:5;
+  left:34%;
+  top:25%;
+ }
+
+.slideRight {
+  transform: rotateY(-0.3turn);
+  top:25%;
+  left:61%;
+}
+
+.slideLeft {
+  transform: rotateY(0.3turn);
+  left:7%;
+  top:25%;
+}
+
+.slideDescription {
+  width: 100%;
+  background-color: white;
+  margin: 0px;
+  padding: 5px;
+}
+
+.slider h2 {
+  width: 90%;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.slider p {
+  width: 90%;
+}
+
+.buttongroup {
+position: relative;
+height: 50px;
+text-align: center;
+color: rgb(220,220,220);
+}
+
+.fa-circle {
+  margin-left: 5px;
+  margin-right: 5px;
+}
