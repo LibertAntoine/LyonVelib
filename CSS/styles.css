@@ -1,0 +1,28 @@
+/* GLOBAL STYLES */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;   
+}
+
+header {
+  top: 0px;
+  height: 82px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  padding-left: 40px;
+  border-bottom: green solid 2px;
+}
+
+footer {
+  background-color: #09C72F;
+  margin-top: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+
