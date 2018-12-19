@@ -183,3 +183,23 @@ color: rgb(220,220,220);
   height: 540px;
   width: 70%;
 }
+
+/* STATION */
+#infos {
+  width: 30%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#detailStation {
+  height: 335px;
+}
+
+#infosReservation {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top : 10px;
+}
