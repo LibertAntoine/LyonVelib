@@ -22,8 +22,38 @@
 	    	<section id="slide-group"></section>
 	    </div> 
 
+		<section id="navig">
+			    		<div id="map"></div>
+						<div id="infos">
+							<div id="infosStation">	
+								<div id="detailStation">
+									<h2 >Station <span id="title"></span></h2>
+									<p>Adresse : <span id="adress">7 boulevard de Lyon</span></p>
+									<p>Nombre de vélo disponible : <span id="bikeValaible">X</span></p>
+									<p id="noplace"></p> 
+								</div>
+								<div>
+									<button id="reserve" class="button button-green">Effectuer un réservation</button>
+
+								</div>
+							</div>
+							<div id="infosReservation" class="thumbnail">	
+								<p id="textReservation">hello</p>
+							</div>
+						</div>
+		</section>
 		<footer>
 			<p>Lyon Vélo - Un site réalisé par Antoine Libert</p>
 		</footer>
+
+		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXMyJdKhfbNbQhxYH3JutncBZ7V4PP-Wo"></script>
+		<script src="JS/fader.js"></script>
+		<script src="JS/station.js"></script>
+		<script src="JS/map.js"></script>
+		<script src="JS/canvas.js"></script>
+		<script src="JS/slider.js"></script>
+		<script src="JS/sessStorage.js"></script>
+		<script src="JS/main.js"></script>
 	</body>
 </html> 

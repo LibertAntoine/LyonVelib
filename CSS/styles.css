@@ -170,3 +170,16 @@ color: rgb(220,220,220);
   margin-left: 5px;
   margin-right: 5px;
 }
+
+/* MAP */
+#navig {
+  border: black 2px solid;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+#map {
+  height: 540px;
+  width: 70%;
+}
